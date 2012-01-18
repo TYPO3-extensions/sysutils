@@ -1,0 +1,9 @@
+{namespace sys=Tx_Sysutils_ViewHelpers}
+Dear Webmaster,
+
+This is your automatically generated TYPO3 report.
+
+<f:groupedFor each="{reports}" groupBy="group" groupKey="group" as="reportGroup">[ {group} ]
+<f:for each="{reportGroup}" as="report"><f:format.padding padLength="30">{report.label}:</f:format.padding>{report.value}
+</f:for>
+</f:groupedFor>
