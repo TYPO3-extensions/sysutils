@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'beta',
+	'state' => 'stable',
 	'uploadfolder' => 1,
 	'createDirs' => 'uploads/tx_sysutils/backups',
 	'modify_tables' => '',
@@ -37,7 +37,6 @@ $EM_CONF[$_EXTKEY] = array(
 			'typo3' => '4.6-0.0.0',
 			'extbase' => '1.4',
 			'fluid' => '1.4',
-			'fed' => '1.4.8',
 		),
 		'conflicts' => array(
 		),

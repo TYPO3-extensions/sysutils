@@ -89,5 +89,3 @@ class Tx_Sysutils_Report_AbstractReport {
 	}
 
 }
-
-?>

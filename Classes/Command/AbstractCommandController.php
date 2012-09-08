@@ -33,27 +33,4 @@
  */
 class Tx_Sysutils_Command_AbstractCommandController extends Tx_Extbase_MVC_Controller_CommandController {
 
-	/**
-	 * @var Tx_Extbase_SignalSlot_Dispatcher
-	 */
-	protected $signalSlotDispatcher;
-
-	/**
-	 * @param Tx_Extbase_SignalSlot_Dispatcher $dispatcher
-	 */
-	public function injectSignalSlotDispatcher(Tx_Extbase_SignalSlot_Dispatcher $dispatcher) {
-		$this->signalSlotDispatcher = $dispatcher;
-	}
-
-	/**
-	 * Wrapper for $this->signalSlotDispatcher->dispatchSignal()
-	 *
-	 * @param string $signalName
-	 * @param array $signalArguments
-	 */
-	public function dispatchSignal($signalName, $signalArguments=array()) {
-		$this->signalSlotDispatcher->dispatch(get_class($this), $signalName, $signalArguments);
-	}
-
 }
-?>
